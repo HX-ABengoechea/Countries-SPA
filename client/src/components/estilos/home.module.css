@@ -1,0 +1,56 @@
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./imagenes/mundoEspacio.png");
+  height: 4300px;
+  width: 100%;
+  background-size: 100%;
+  background-position-y: center;
+  background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 37, 37);
+  border-radius: 10px;
+}
+
+.paginadoBox {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  width: 100%;
+  position: absolute;
+}
+
+.cardsBox {
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.notFound {
+  font-size: 30px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: red;
+  background-color: black;
+  text-decoration: underline;
+  width: 500px;
+  border-radius: 18px;
+  height: 50px;
+}

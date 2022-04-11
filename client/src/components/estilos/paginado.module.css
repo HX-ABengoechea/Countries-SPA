@@ -1,0 +1,19 @@
+.botones {
+  margin-left: 1px;
+  margin-right: 1px;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  background-color: #252525;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: white;
+  font-size: 12px;
+  border: 2px solid #101010;
+}
+
+.botones:hover {
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  background-color: #313131;
+}

@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(39, 43, 57);
+  justify-content: space-between;
+}
+
+.subContainer {
+  background-color: #272b39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+}
+
+.subContainer2 {
+  background-color: #272b39;
+  width: 1199px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.deleter {
+  height: 40px;
+  width: 180px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffbd00;
+  border-color: #ffbd00;
+  border-radius: 15px;
+  box-shadow: 5px 15px 10px #09060a;
+  cursor: pointer;
+  transition: all 500ms ease;
+  animation: pulse 1.5s infinite;
+}
+
+.deleter:hover {
+  background-color: #c39005;
+  height: 55px;
+  width: 200px;
+}
+
+.creator {
+  height: 50px;
+  width: 180px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffbd00;
+  border-color: #ffbd00;
+  border-radius: 15px;
+  box-shadow: 5px 15px 10px #09060a;
+  cursor: pointer;
+  transition: all 500ms ease;
+  animation: pulse 1.5s infinite;
+}
+
+.creator:hover {
+  background-color: #c39005;
+  height: 55px;
+  width: 200px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(256, 256, 256, 0.1);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
+  }
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+  }
+}

@@ -1,0 +1,113 @@
+.errName1 {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  margin-top: 80px;
+  margin-left: 25px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+}
+
+.errDif {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  margin-top: 80px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+}
+
+.errDif2 {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  margin-top: 80px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 40px;
+  position: absolute;
+  padding-bottom: 1px;
+}
+
+.errDur {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  height: 20px;
+  margin-left: 440px;
+  margin-top: 95px;
+  display: flex;
+  height: 20px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  position: absolute;
+}
+
+.errDur2 {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  height: 20px;
+  margin-left: 440px;
+  margin-top: 95px;
+  display: flex;
+  height: 40px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  position: absolute;
+}
+
+.errSea {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  margin-top: 87px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  margin-left: 160px;
+  padding-bottom: 1px;
+}
+
+.errCount {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  margin-top: 180px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  margin-left: 220px;
+  padding-bottom: 1px;
+}
+
+.errSub {
+  font-family: "Trebuchet MS", Verdana, system-ui;
+  color: red;
+  font-size: 16px;
+  background-color: rgb(55, 53, 53, 0.7);
+  border-radius: 9px;
+  margin-left: 230px;
+  width: 230px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+}
