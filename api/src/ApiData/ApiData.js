@@ -8,6 +8,7 @@ const apiCall = async () => {
   /*Hacemos un Try / Catch para facilitar la búsqueda de un error.*/
   try {
     /*La constante "keepData" trae toda la información de la Api.*/
+
     const keepData = await axios.get(`https://restcountries.com/v3/all`);
 
     /*Con el siguiente map discriminaré la información de la Api que no necesito, y guardaré en la 

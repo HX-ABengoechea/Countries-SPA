@@ -43,12 +43,12 @@ export default function Activity() {
     e.preventDefault();
     setInput({
       ...input,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value.trim(),
     });
     setErrors(
       validate({
         ...input,
-        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.value.trim(),
       })
     );
   }

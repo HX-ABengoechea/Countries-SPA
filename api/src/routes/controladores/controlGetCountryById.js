@@ -12,6 +12,7 @@ const getCountryById = async (req, res) => {
     /*Pregunto si se recibió o no el parámetro.*/
     if (id) {
       /*Aquí traigo el país específico pedido por parámetro incluyendo sus actividades turísticas.*/
+
       let pais = await Country.findOne({
         where: { id: { [Op.iLike]: `%${id}%` } },
         include: {

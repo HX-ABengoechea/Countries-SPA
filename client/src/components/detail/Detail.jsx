@@ -12,6 +12,7 @@ import s from "../estilos/detail.module.css";
 import cargando from "../estilos/imagenes/cargando.gif";
 //______________________________________________________________________________
 
+/*Este componente va a mostrar toda la información de un país específico.*/
 export default function Detail() {
   const dispatch = useDispatch();
 
