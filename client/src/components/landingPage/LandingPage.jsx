@@ -13,7 +13,6 @@ export default function LandingPage() {
   /*Renderización.*/
   return (
     <div className={s.fondo}>
-      {/*Título de la página web.*/}
       <div className={s.cajonLetras}>
         <h3 className={s.t1}>B</h3>
         <h3 className={s.t2}>I</h3>
@@ -27,12 +26,10 @@ export default function LandingPage() {
         <h3 className={s.t10}>O</h3>
       </div>
 
-      {/*Botón para ingresar al "/home".*/}
       <Link to="/home">
         <button className={s.btning}>INGRESAR</button>
       </Link>
 
-      {/*LinkedIn.*/}
       <div className={s.no}>
         <a
           href="https://www.linkedin.com/in/alejobengo/"
@@ -41,10 +38,12 @@ export default function LandingPage() {
         >
           <img src={linkedIn} alt="Not Found" className={s.linkedIn} />
         </a>
-
-        {/*GitHub.*/}
       </div>
-      <a href="https://github.com/AlejoBengo" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/AlejoBengo/Countries-SPA"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={gitHub} alt="Not Found" className={s.gitHub} />
       </a>
     </div>

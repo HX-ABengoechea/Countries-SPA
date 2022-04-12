@@ -36,10 +36,8 @@ export default function SearchBar() {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      {/*Nombre de la página web.*/}
       <h1 className={s.title}>M A P S P H E R E</h1>
       <div className={s.conSearch}>
-        {/*En esta barra se podrá ingrsar el nombre del país que se está buscando.*/}
         <input
           type="search"
           placeholder="Nombre..."
@@ -49,7 +47,6 @@ export default function SearchBar() {
         ></input>
       </div>
 
-      {/*Con este botón se ejecutará la función que despach el nombre del país*/}
       <button
         className={s.submit}
         type="submit"
@@ -58,7 +55,6 @@ export default function SearchBar() {
         Buscar
       </button>
 
-      {/*Botón que permite volver a la landing page.*/}
       <Link className={s.link} to="/">
         <button className={s.back}>Volver</button>
       </Link>

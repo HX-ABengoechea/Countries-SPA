@@ -26,7 +26,7 @@ const { apiCall } = require("./src/ApiData/ApiData");
 
 /*Aquí sincronizamos los modelos con la base de datos.*/
 conn
-  .sync({ force: false })
+  .sync({ force: true })
 
   /*Una vez sincronizada, ejecutamos la función "apiCall" para guardar la información en la base de datos.*/
   .then(apiCall, console.log("¡Los países se cargaron exitosamente! :D"))

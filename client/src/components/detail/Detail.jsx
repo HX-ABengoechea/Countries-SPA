@@ -97,7 +97,10 @@ export default function Detail() {
           </div>
         </div>
       ) : (
-        <h1>L O A D I N G . . . </h1>
+        <div>
+          <img src={cargando} alt="Not Found" />,
+          <h3 className={s.notFound}>No se encontraron países</h3>
+        </div>
       )}
     </div>
   );

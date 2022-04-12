@@ -6,13 +6,6 @@
   background-size: 100%;
 }
 
-.image {
-  position: absolute;
-  display: flex;
-  margin-top: 120px;
-  margin-left: 440px;
-}
-
 .btning {
   height: 40px;
   width: 180px;

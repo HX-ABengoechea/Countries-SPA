@@ -11,9 +11,13 @@ export default function CountryCard({ name, continent, flag, id }) {
   /*Renderización.*/
   return (
     <div className={s.card}>
-      <Link to={`/home/detail/` + id}>
+      {name === "Este país no existe" ? (
         <img className={s.img} src={flag} alt="Ups..." />
-      </Link>
+      ) : (
+        <Link to={`/home/detail/` + id}>
+          <img className={s.img} src={flag} alt="Ups..." />
+        </Link>
+      )}
 
       <h3 className={s.nombre} key={name}>
         {name}
@@ -23,11 +27,15 @@ export default function CountryCard({ name, continent, flag, id }) {
         {continent}
       </h5>
 
-      <Link className={s.link} to={`/home/detail/` + id}>
-        <button className={s.boton} key={id}>
-          Detalle
-        </button>
-      </Link>
+      {name === "Este país no existe" ? (
+        <h4>No hay detalles</h4>
+      ) : (
+        <Link className={s.link} to={`/home/detail/` + id}>
+          <button className={s.boton} key={id}>
+            Detalle
+          </button>
+        </Link>
+      )}
     </div>
   );
 }

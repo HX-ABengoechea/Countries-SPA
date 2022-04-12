@@ -18,7 +18,6 @@ export default function Paginado({ countriesPerPage, allCountries, paginado }) {
   /*Renderización.*/
   return (
     <div>
-      {/*Por cada página se renderizará un botón que, al precionarlo, nos llevará a la página que representa.*/}
       {pageNumbers &&
         pageNumbers.map((number) => {
           return (
