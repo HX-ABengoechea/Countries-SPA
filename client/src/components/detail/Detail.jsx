@@ -9,6 +9,7 @@ import Encabezado from "../encabezado/Encabezado";
 import { getCountryById } from "../../redux/actions/index";
 /*IMPORT DE CSS*/
 import s from "../estilos/detail.module.css";
+import cargando from "../estilos/imagenes/cargando.gif";
 //______________________________________________________________________________
 
 export default function Detail() {

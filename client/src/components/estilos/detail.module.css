@@ -171,3 +171,14 @@
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 14px;
 }
+
+.notFound {
+  font-size: 30px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: red;
+  background-color: black;
+  text-decoration: underline;
+  width: 500px;
+  border-radius: 18px;
+  height: 50px;
+}
