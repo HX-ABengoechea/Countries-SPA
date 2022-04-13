@@ -25,6 +25,8 @@
   transition-duration: 0.1s;
   -webkit-text-stroke: 1px black;
   margin: 5px;
+  display: block;
+  height: 20px;
 }
 
 .letra:hover {

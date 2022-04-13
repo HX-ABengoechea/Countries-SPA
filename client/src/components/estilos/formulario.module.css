@@ -6,17 +6,52 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
 }
 
-.topContainer {
-  width: 700px;
-  height: 100px;
+.buttonsContainer {
+  width: 50%;
+  height: 15%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  margin-right: 20px;
+}
+
+.formContainer {
+  width: 50%;
+  height: 80%;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-left: 800px;
-  position: absolute;
+}
+
+.nuevaActividad {
+  width: 40%;
+  height: 40%;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(160, 160, 160);
+  background-color: #101010;
+  border-color: #101010;
+  border-radius: 15px;
+  box-shadow: 5px 15px 10px #09060a;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.nuevaActividad:hover {
+  width: 50%;
+  height: 50%;
+  font-size: 22px;
+  background-color: #313131;
 }
 
 .back {
@@ -31,7 +66,6 @@
   border-radius: 15px;
   box-shadow: 5px 15px 10px #09060a;
   cursor: pointer;
-  margin-right: 120px;
   transition: all 500ms ease;
 }
 
@@ -42,181 +76,113 @@
   background-color: #313131;
 }
 
-.new {
-  width: 260px;
-  height: 40px;
-  font-size: 20px;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  letter-spacing: 5px;
-  color: rgb(160, 160, 160);
-  background-color: #101010;
-  border-color: #101010;
-  border-radius: 15px;
-  box-shadow: 5px 15px 10px #09060a;
-  cursor: pointer;
-  margin-left: 50px;
-  transition: all 500ms ease;
-}
-
-.new:hover {
-  width: 270px;
-  height: 50px;
-  font-size: 21px;
-  background-color: #313131;
-}
-
-.botContainer {
-  width: 700px;
-  height: 630px;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  position: absolute;
-  margin-top: 120px;
-  margin-left: 750px;
-}
-
 .title {
   font-family: "Trebuchet MS", Verdana, sans-serif;
   letter-spacing: 5px;
-  font-size: 50px;
-  margin-left: 60px;
+  font-size: 40px;
   color: rgb(213, 209, 209);
+  margin-left: 20%;
 }
 
-.supresor {
+.infoBox {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  height: 60px;
-  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-.label {
+.labelMap {
   font-size: 20px;
   font-family: "Trebuchet MS", Verdana, sans-serif;
   color: rgb(213, 209, 209);
-  margin: 28px;
 }
 
-.label2 {
-  font-size: 20px;
+.labelDur {
+  font-size: 21px;
   font-family: "Trebuchet MS", Verdana, sans-serif;
   color: rgb(213, 209, 209);
-  margin-left: 360px;
-  position: absolute;
+  margin-left: 70px;
 }
 
-.placer1 {
+.nameInput {
   background-color: rgb(201, 198, 198, 0.2);
-  height: 30px;
-  width: 350px;
-  position: absolute;
-  margin-left: 160px;
   border-radius: 10px;
   border: 3px solid rgb(201, 198, 198, 0.2);
   padding-left: 20px;
   color: rgb(213, 209, 209);
   transition: all 500ms ease;
   font-size: 18px;
+  margin-left: 20px;
+  width: 300px;
 }
 
-.placer1:focus {
-  width: 450px;
-}
-
-.placer2 {
-  background-color: rgb(201, 198, 198, 0.2);
-  height: 25px;
-  width: 120px;
-  position: absolute;
-  margin-left: 160px;
-  border-radius: 10px;
-  border-color: rgb(201, 198, 198, 0.2);
-  color: rgb(213, 209, 209);
-  padding-left: 20px;
-  transition: all 500ms ease;
-  font-size: 18px;
-}
-
-.placer2:focus {
-  width: 160px;
-}
-
-.placer3 {
-  background-color: rgb(201, 198, 198, 0.2);
-  height: 25px;
-  width: 120px;
-  position: absolute;
-  font-size: 18px;
-  margin-left: 470px;
-  border-radius: 10px;
-  border-color: rgb(201, 198, 198, 0.2);
-  padding-left: 20px;
-  color: rgb(213, 209, 209);
-  transition: all 500ms ease;
-}
-
-.placer3:focus {
-  width: 160px;
-}
-
-.selector {
-  background-color: rgba(0, 0, 0, 0.575);
-  height: 40px;
-  width: 200px;
-  position: absolute;
-  margin-left: 160px;
-  margin-top: 2px;
-  border-radius: 10px;
-  border-color: rgb(201, 198, 198, 0.4);
-  padding-left: 20px;
-  color: rgb(213, 209, 209);
-}
-
-.selector2 {
-  background-color: rgba(0, 0, 0, 0.575);
-  height: 40px;
+.nameInput:focus {
   width: 400px;
-  position: absolute;
-  margin-left: 120px;
-  margin-top: 2px;
+}
+
+.seasonInput {
+  background-color: rgba(0, 0, 0, 0.72);
   border-radius: 10px;
-  color: rgb(213, 209, 209);
-  border-color: rgb(201, 198, 198, 0.4);
+  border: 3px rgba(0, 0, 0, 0.72);
   padding-left: 20px;
-}
-
-.selector2::-webkit-scrollbar {
-  width: 10px;
-  background-color: #fff;
-}
-
-.selector2::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 37, 37);
-  border-radius: 10px;
-}
-
-.submit {
-  height: 40px;
-  width: 180px;
-  font-size: 20px;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  letter-spacing: 5px;
-  color: rgb(160, 160, 160);
-  background-color: #101010;
-  border-color: #101010;
-  border-radius: 15px;
-  box-shadow: 5px 15px 10px #09060a;
-  cursor: pointer;
+  color: rgb(166, 164, 164);
   transition: all 500ms ease;
-  margin-top: 100px;
+  font-size: 16px;
+  margin-left: 20px;
+  width: 200px;
+  height: 30px;
 }
 
-.submit:hover {
-  height: 50px;
-  width: 200px;
-  font-size: 23px;
-  background-color: #313131;
+.countriesInput {
+  background-color: rgba(0, 0, 0, 0.72);
+  border-radius: 10px;
+  border: 3px rgba(0, 0, 0, 0.72);
+  padding-left: 20px;
+  color: rgb(166, 164, 164);
+  transition: all 500ms ease;
+  font-size: 16px;
+  margin-left: 20px;
+  width: 350px;
+  height: 30px;
+}
+
+.infoBox2 {
+  display: flex;
+  margin-left: 20px;
+}
+
+.inputDifDur {
+  background-color: rgb(201, 198, 198, 0.2);
+  border-radius: 10px;
+  border: 3px solid rgb(201, 198, 198, 0.2);
+  padding-left: 20px;
+  color: rgb(213, 209, 209);
+  transition: all 500ms ease;
+  font-size: 18px;
+  margin-left: 20px;
+  width: 100px;
+}
+
+.inputDifDur:focus {
+  width: 150px;
+}
+
+.infoBox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.choosed {
+  background-color: rgba(21, 20, 20, 0.8);
+  width: 146%;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .submit2 {
@@ -230,33 +196,31 @@
   border-color: #b60000;
   border-radius: 15px;
   box-shadow: 5px 15px 10px #09060a;
-  margin-top: 100px;
+  margin-left: 35%;
+  margin-bottom: 10px;
 }
-
-.choosed {
-  background-color: rgba(21, 20, 20, 0.8);
-  width: 640px;
-  height: 100px;
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 30px;
+.submit {
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(160, 160, 160);
+  background-color: #101010;
+  border-color: #101010;
   border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow-y: auto;
+  box-shadow: 5px 15px 10px #09060a;
+  cursor: pointer;
+  transition: all 500ms ease;
+  margin-left: 35%;
+  margin-bottom: 10px;
 }
-
-.choosed::-webkit-scrollbar {
-  width: 10px;
-  background-color: #fff;
+.submit:hover {
+  height: 50px;
+  width: 200px;
+  font-size: 23px;
+  background-color: #313131;
 }
-
-.choosed::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 37, 37);
-  border-radius: 10px;
-}
-
 .card {
   width: 140px;
   height: 40px;
@@ -265,31 +229,26 @@
   display: flex;
   border-radius: 8px;
 }
-
-.country {
+.countryName {
   font-size: 13px;
   font-family: "Trebuchet MS", Verdana, sans-serif;
   color: rgb(160, 160, 160);
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: 3px;
   width: 128px;
 }
-
 .cross {
-  position: absolute;
   width: 12px;
-  height: 15px;
+  height: 17px;
   background-color: #504f4f;
   border-color: #504f4f;
   color: black;
-  display: flex;
   border-radius: 4px;
+  font-weight: bold;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  margin-left: 125px;
 }
 
 .cross:hover {
@@ -297,4 +256,448 @@
   height: 18px;
   background-color: #5c5c5c;
   border-color: #5c5c5c;
+}
+
+@media (min-width: 2800px) {
+  .nuevaActividad {
+    font-size: 80px;
+  }
+  .back {
+    height: 120px;
+    width: 550px;
+    font-size: 80px;
+  }
+  .nuevaActividad:hover {
+    width: 1000px;
+    height: 180px;
+    font-size: 90px;
+  }
+  .back:hover {
+    width: 700px;
+    height: 170px;
+    font-size: 90px;
+  }
+  .title {
+    font-size: 120px;
+    margin-left: 23%;
+  }
+  .nameInput {
+    font-size: 70px;
+    height: 80px;
+    width: 900px;
+  }
+  .nameInput:focus {
+    width: 1050px;
+  }
+  .labelMap {
+    font-size: 70px;
+    margin-left: 40px;
+  }
+  .seasonInput {
+    width: 800px;
+    height: 80px;
+    font-size: 55px;
+  }
+  .countriesInput {
+    font-size: 55px;
+    width: 1100px;
+    height: 90px;
+  }
+  .labelDur {
+    font-size: 70px;
+  }
+  .inputDifDur {
+    font-size: 55px;
+    margin-left: 60px;
+    width: 400px;
+  }
+  .inputDifDur:focus {
+    width: 500px;
+  }
+  .choosed {
+    width: 2000px;
+    height: 300px;
+  }
+  .submit {
+    width: 500px;
+    height: 130px;
+    font-size: 80px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+  }
+  .submit2 {
+    height: 130px;
+    width: 500px;
+    font-size: 80px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+  }
+  .submit:hover {
+    height: 150px;
+    width: 550px;
+    background-color: #313131;
+    font-size: 85px;
+  }
+  .card {
+    width: 470px;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .countryName {
+    font-size: 45px;
+    margin-left: 20px;
+    width: 450px;
+  }
+  .cross {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+  .cross:hover {
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .formContainer {
+    margin-right: 15px;
+  }
+  .buttonsContainer {
+    margin-right: 15px;
+  }
+  .nuevaActividad {
+    font-size: 14px;
+  }
+  .back {
+    height: 30px;
+    width: 110px;
+    font-size: 14px;
+  }
+  .nuevaActividad:hover {
+    width: 45%;
+    height: 45%;
+    font-size: 17px;
+  }
+  .back:hover {
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+  }
+  .title {
+    font-size: 30px;
+    margin-left: 20%;
+  }
+  .nameInput {
+    font-size: 15px;
+    height: 18px;
+    width: 200px;
+    border: 2px solid rgb(201, 198, 198, 0.2);
+  }
+  .nameInput:focus {
+    width: 300px;
+  }
+  .labelMap {
+    font-size: 16px;
+  }
+  .seasonInput {
+    width: 200px;
+    height: 23px;
+    font-size: 14px;
+  }
+  .countriesInput {
+    font-size: 14px;
+    width: 280px;
+    height: 23px;
+  }
+  .labelDur {
+    font-size: 17px;
+    margin-left: 30px;
+  }
+  .inputDifDur {
+    font-size: 15px;
+    margin-left: 17px;
+    width: 80px;
+    height: 18px;
+    border: 2px solid rgb(201, 198, 198, 0.2);
+  }
+  .inputDifDur:focus {
+    width: 110px;
+  }
+  .choosed {
+    width: 475px;
+    height: 75px;
+  }
+  .submit {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    margin-left: 170px;
+    margin-bottom: 13px;
+  }
+  .submit2 {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    margin-left: 170px;
+    margin-bottom: 13px;
+  }
+  .submit:hover {
+    width: 150px;
+    height: 40px;
+    background-color: #313131;
+    font-size: 25px;
+  }
+  .card {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .countryName {
+    font-size: 8px;
+    width: 150px;
+  }
+  .cross {
+    width: 10px;
+    height: 15px;
+    font-size: 11px;
+  }
+  .cross:hover {
+    width: 15px;
+    height: 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .formContainer {
+    margin-right: 10px;
+  }
+  .buttonsContainer {
+    margin-right: 10px;
+  }
+  .nuevaActividad {
+    font-size: 10px;
+    width: 200px;
+    height: 30px;
+  }
+  .back {
+    width: 90px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .nuevaActividad:hover {
+    width: 45%;
+    height: 45%;
+    font-size: 13px;
+  }
+  .back:hover {
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .title {
+    font-size: 22px;
+    margin-left: 20%;
+  }
+  .nameInput {
+    font-size: 10px;
+    height: 14px;
+    width: 140px;
+    border: 1px solid rgb(201, 198, 198, 0.2);
+  }
+  .nameInput:focus {
+    width: 170px;
+  }
+  .labelMap {
+    font-size: 12px;
+  }
+  .seasonInput {
+    width: 150px;
+    height: 17px;
+    font-size: 10px;
+  }
+  .countriesInput {
+    font-size: 10px;
+    width: 190px;
+    height: 17px;
+  }
+  .labelDur {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  .inputDifDur {
+    font-size: 10px;
+    margin-left: 12px;
+    width: 50px;
+    height: 13px;
+    border: 1px solid rgb(201, 198, 198, 0.2);
+  }
+  .inputDifDur:focus {
+    width: 65px;
+  }
+  .choosed {
+    width: 350px;
+    height: 60px;
+  }
+  .submit {
+    width: 110px;
+    height: 30px;
+    font-size: 13px;
+    margin-left: 150px;
+    margin-bottom: 13px;
+  }
+  .submit2 {
+    width: 110px;
+    height: 30px;
+    font-size: 13px;
+    margin-left: 150px;
+    margin-bottom: 13px;
+  }
+  .submit:hover {
+    width: 120px;
+    height: 35px;
+    background-color: #313131;
+    font-size: 15px;
+  }
+  .card {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .countryName {
+    font-size: 8px;
+    width: 150px;
+  }
+  .cross {
+    width: 10px;
+    height: 15px;
+    font-size: 11px;
+  }
+  .cross:hover {
+    width: 15px;
+    height: 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formContainer {
+    margin-right: 5px;
+    border-radius: 7px;
+    justify-content: space-evenly;
+  }
+  .buttonsContainer {
+    margin-right: 5px;
+  }
+  .nuevaActividad {
+    font-size: 5px;
+    width: 130px;
+    height: 20px;
+  }
+  .back {
+    width: 60px;
+    height: 20px;
+    font-size: 6px;
+  }
+  .nuevaActividad:hover {
+    width: 140px;
+    height: 25px;
+    font-size: 7px;
+  }
+  .back:hover {
+    width: 70px;
+    height: 25px;
+    font-size: 8px;
+  }
+  .title {
+    display: none;
+  }
+  .nameInput {
+    font-size: 8px;
+    height: 9px;
+    margin-left: 6px;
+    width: 90px;
+  }
+  .nameInput:focus {
+    width: 120px;
+  }
+  .labelMap {
+    font-size: 9px;
+  }
+  .seasonInput {
+    width: 100px;
+    height: 13px;
+    font-size: 8px;
+    padding-left: 6px;
+    margin-left: 8px;
+  }
+  .countriesInput {
+    font-size: 8px;
+    margin-left: 8px;
+    width: 140px;
+    padding-left: 6px;
+    height: 13px;
+  }
+  .labelDur {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .inputDifDur {
+    font-size: 8px;
+    margin-left: 8px;
+    width: 40px;
+    height: 9px;
+    padding-left: 5px;
+  }
+  .inputDifDur:focus {
+    width: 60px;
+  }
+  .choosed {
+    width: 230px;
+    border-radius: 9px;
+    height: 45px;
+  }
+  .submit {
+    width: 80px;
+    height: 20px;
+    font-size: 7px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+  .submit2 {
+    width: 80px;
+    height: 20px;
+    font-size: 7px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+  .submit:hover {
+    width: 95px;
+    height: 27px;
+    background-color: #313131;
+    font-size: 10px;
+  }
+  .card {
+    width: 50px;
+    border-radius: 3px;
+    height: 20px;
+    margin-top: 1px;
+  }
+  .countryName {
+    font-size: 6px;
+    width: 100px;
+  }
+  .cross {
+    border: 0px;
+    width: 4px;
+    height: 7px;
+    font-size: 4px;
+  }
+  .cross:hover {
+    width: 3px;
+    height: 8px;
+    font-size: 4px;
+  }
 }

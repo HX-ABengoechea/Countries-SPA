@@ -112,8 +112,8 @@ export default function Activity() {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      <div className={s.topContainer}>
-        <button className={s.new} onClick={(e) => handleNew(e)}>
+      <div className={s.buttonsContainer}>
+        <button className={s.nuevaActividad} onClick={(e) => handleNew(e)}>
           Nueva Actividad
         </button>
 
@@ -122,13 +122,13 @@ export default function Activity() {
         </Link>
       </div>
 
-      <form className={s.botContainer} onSubmit={(e) => handleSubmit(e)}>
+      <form className={s.formContainer} onSubmit={(e) => handleSubmit(e)}>
         <h1 className={s.title}>CREAR ACTIVIDAD</h1>
 
-        <div className={s.supresor}>
-          <label className={s.label}>NOMBRE: </label>
+        <div className={s.infoBox}>
+          <label className={s.labelMap}>NOMBRE: </label>
           <input
-            className={s.placer1}
+            className={s.nameInput}
             key="name"
             autoComplete="off"
             type="text"
@@ -143,10 +143,10 @@ export default function Activity() {
           )}
         </div>
 
-        <div className={s.supresor}>
-          <label className={s.label}>DIFICULTAD: </label>
+        <div className={s.infoBox2}>
+          <label className={s.labelMap}>DIFICULTAD: </label>
           <input
-            className={s.placer2}
+            className={s.inputDifDur}
             key="difficulty"
             type="text"
             value={input.difficulty}
@@ -163,12 +163,13 @@ export default function Activity() {
             <p className={e.errDif2}>{errors.difficulty3}</p>
           )}
 
-          <label className={s.label2}>DURACIÓN: </label>
+          <label className={s.labelDur}>DURACIÓN: </label>
           <input
-            className={s.placer3}
+            className={s.inputDifDur}
             key="duration"
             autoComplete="off"
             type="text"
+            placeholder="Días..."
             value={input.duration}
             name="duration"
             onChange={(e) => handleChange(e)}
@@ -183,10 +184,10 @@ export default function Activity() {
           )}
         </div>
 
-        <div className={s.supresor}>
-          <label className={s.label}>TEMPORADA: </label>
+        <div className={s.infoBox}>
+          <label className={s.labelMap}>TEMPORADA: </label>
           <select
-            className={s.selector}
+            className={s.seasonInput}
             name="season"
             onChange={(e) => handleChange(e)}
           >
@@ -208,31 +209,35 @@ export default function Activity() {
           {errors.season && <p className={e.errSea}>{errors.season}</p>}
         </div>
 
-        <div className={s.supresor}>
-          <label className={s.label}>PAISES: </label>
-          <select className={s.selector2} onChange={(e) => handleSelect(e)}>
-            {allCountries
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((pais) => {
-                return (
-                  <option key={pais.id} value={pais.name}>
-                    {pais.name}
-                  </option>
-                );
-              })}
-          </select>
-
+        <div className={s.infoBox3}>
+          <div>
+            <label className={s.labelMap}>PAISES: </label>
+            <select
+              className={s.countriesInput}
+              onChange={(e) => handleSelect(e)}
+            >
+              {allCountries
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((pais) => {
+                  return (
+                    <option key={pais.id} value={pais.name}>
+                      {pais.name}
+                    </option>
+                  );
+                })}
+            </select>
+          </div>
+          <br></br>
           <div className={s.choosed}>
             {input.countries.map((pais) => (
               <div key={pais} className={s.card}>
-                <p className={s.country}>{pais}</p>
+                <p className={s.countryName}>{pais}</p>
                 <button className={s.cross} onClick={() => handleDelete(pais)}>
                   x
                 </button>
               </div>
             ))}
           </div>
-
           {errors.countries && <p className={e.errCount}>{errors.countries}</p>}
         </div>
 

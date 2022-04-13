@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 import s from "../estilos/searchBar.module.css";
 //______________________________________________________________________________
 
-/*Este componente mostrará la barra de búsqueda en "/home".*/
 export default function Encabezado() {
-  /*Renderización.*/
   return (
     <div className={s.container}>
       <h1 className={s.title}>M A P S P H E R E</h1>

@@ -36,26 +36,27 @@ export default function SearchBar() {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      <h1 className={s.title}>M A P S P H E R E</h1>
-      <div className={s.conSearch}>
+      <h1 className={s.mapsphere}>M A P S P H E R E</h1>
+
+      <div className={s.utils}>
         <input
           type="search"
           placeholder="Nombre..."
           value={name}
-          className={s.searcher}
+          className={s.searchBar}
           onChange={(e) => handlerInputName(e)}
         ></input>
+
+        <button
+          className={s.submit}
+          type="submit"
+          onClick={(e) => handleSubmit(e)}
+        >
+          Buscar
+        </button>
       </div>
 
-      <button
-        className={s.submit}
-        type="submit"
-        onClick={(e) => handleSubmit(e)}
-      >
-        Buscar
-      </button>
-
-      <Link className={s.link} to="/">
+      <Link to="/">
         <button className={s.back}>Volver</button>
       </Link>
     </div>
