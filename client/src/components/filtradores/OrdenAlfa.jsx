@@ -9,13 +9,15 @@ import s from "../../components/estilos/filtros/filtroAlpha.module.css";
 //______________________________________________________________________________
 
 /*Este componente es el encargado de ordenar todos los países alfabéticamente.*/
-export default function OrdenAlfa() {
+export default function OrdenAlfa({ setCurrentPage, setOrden }) {
   const dispatch = useDispatch();
 
   /*Esta función se encarga de despachar el modo de ordenamiento.*/
   function handleOrderByAlpha(e) {
     e.preventDefault();
     dispatch(orderByAlpha(e.target.value));
+    setCurrentPage(1);
+    setOrden(`Ordenado: ${e.target.value}`);
   }
 
   /*Renderización.*/

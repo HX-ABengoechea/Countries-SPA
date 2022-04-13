@@ -2,9 +2,7 @@
 const { DataTypes } = require("sequelize");
 //______________________________________________________________________________
 
-/*Exportamos una funcion que define el modelo, para después inyectar la conexion a sequelize.*/
 module.exports = (sequelize) => {
-  /*Defino el modelo.*/
   sequelize.define(
     "country",
     {
@@ -46,7 +44,6 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
     },
-    /*Con esto restringimos atributos que no me interesaa tener*/
     { timestamps: false }
   );
 };

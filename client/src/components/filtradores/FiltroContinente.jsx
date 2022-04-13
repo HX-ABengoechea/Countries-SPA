@@ -9,13 +9,15 @@ import s from "../../components/estilos/filtros/filtroContinente.module.css";
 //______________________________________________________________________________
 
 /*Este componente se encarga de filtrar los países por continente.*/
-export default function FiltroContinente() {
+export default function FiltroContinente({ setCurrentPage, setOrden }) {
   const dispatch = useDispatch();
 
   /*Esta función es la encargada de despachar el continente por el que se va a filtrar.*/
   function handleFilterContinent(e) {
     e.preventDefault();
     dispatch(filterCountriesByContinent(e.target.value));
+    setCurrentPage(1);
+    setOrden(`Ordenado: ${e.target.value}`);
   }
 
   /*Renderización.*/

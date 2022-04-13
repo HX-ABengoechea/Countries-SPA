@@ -40,10 +40,8 @@ let capsEntries = entries.map((entry) => [
 /*En sequelize.models están todos los modelos que creé importados como propiedades*/
 sequelize.models = Object.fromEntries(capsEntries);
 
-/*Para poder realcionar mis modelos voy a hacer un destructuring de ellos*/
 const { Activity, Country } = sequelize.models;
 
-/*Aquí hago las relaciones entre los dos modelos que creé*/
 Country.belongsToMany(Activity, { through: "country_activity" });
 Activity.belongsToMany(Country, { through: "country_activity" });
 

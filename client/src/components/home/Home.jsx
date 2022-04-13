@@ -47,6 +47,7 @@ export default function Home() {
 
   /*Este efecto permite actualizar todos los países cada vez que se actualiza o se monta este componente.*/
   useEffect(() => {
+    setCurrentPage(1);
     dispatch(getAllCountries());
   }, [dispatch]);
 

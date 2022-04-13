@@ -13,7 +13,7 @@ import s from "../../components/estilos/filtros/filtroActividades.module.css";
 //______________________________________________________________________________
 
 /*Este componente se encarga de filtrar los países por actividad turística.*/
-export default function FiltroActividad() {
+export default function FiltroActividad({ setCurrentPage, setOrden }) {
   const dispatch = useDispatch();
 
   /*Traigo un arreglo con todas las actividades del store.*/
@@ -48,6 +48,8 @@ export default function FiltroActividad() {
   function handleFilterActivity(e) {
     e.preventDefault();
     dispatch(filterActivity(e.target.value));
+    setCurrentPage(1);
+    setOrden(`Ordenado: ${e.target.value}`);
   }
 
   /*Renderización.*/

@@ -30,13 +30,13 @@ export default function Filtradores({ setCurrentPage, setOrden }) {
     <div className={s.container}>
       <div className={s.subContainer2}>
         {/*Componente de filtrado por continente.*/}
-        <FiltroContinente />
+        <FiltroContinente setCurrentPage={setCurrentPage} setOrden={setOrden} />
 
         {/*Componente de filtrado por actividad turística.*/}
-        <FiltroActividad />
+        <FiltroActividad setCurrentPage={setCurrentPage} setOrden={setOrden} />
 
         {/*Componente de ordenamiento por orden alfabético.*/}
-        <OrdenAlfa />
+        <OrdenAlfa setCurrentPage={setCurrentPage} setOrden={setOrden} />
 
         {/*Componente de ordenamiento por población.*/}
         <OrdenPoblacion setCurrentPage={setCurrentPage} setOrden={setOrden} />

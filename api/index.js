@@ -24,14 +24,11 @@ const { conn } = require("./src/db.js");
 const { apiCall } = require("./src/ApiData/ApiData");
 //______________________________________________________________________________
 
-/*Aquí sincronizamos los modelos con la base de datos.*/
 conn
-  .sync({ force: false })
+  .sync({ force: true })
 
-  /*Una vez sincronizada, ejecutamos la función "apiCall" para guardar la información en la base de datos.*/
   .then(apiCall, console.log("¡Los países se cargaron exitosamente! :D"))
 
-  /*Por último, activamos el puerto en el que se expedirá la información de nuestro back-end.*/
   .then(() => {
     server.listen(3001, () => {
       console.log("¡El servidor fue levantado en el puerto 3001! :D");
