@@ -28,7 +28,7 @@ export default function Filtradores({ setCurrentPage, setOrden }) {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      <div className={s.subContainer2}>
+      <div className={s.filtersContainer}>
         {/*Componente de filtrado por continente.*/}
         <FiltroContinente setCurrentPage={setCurrentPage} setOrden={setOrden} />
 
@@ -41,7 +41,7 @@ export default function Filtradores({ setCurrentPage, setOrden }) {
         {/*Componente de ordenamiento por población.*/}
         <OrdenPoblacion setCurrentPage={setCurrentPage} setOrden={setOrden} />
       </div>
-      <div className={s.subContainer}>
+      <div className={s.buttonsContainer}>
         {/*Botón para borrar todos los filtros.*/}
         <button className={s.deleter} onClick={(e) => handleClick(e)}>
           BORRAR FILTROS

@@ -57,23 +57,25 @@ export default function FiltroActividad({ setCurrentPage, setOrden }) {
     <div className={s.container}>
       {/*Selector de actividad a filtrar.*/}
       <h6 className={s.title}>ACTIVIDAD TURISTICA</h6>
-
-      <select
-        className={s.selector}
-        key="Actividad"
-        onChange={(e) => handleFilterActivity(e)}
-      >
-        {/*Opción base.*/}
-        <option key="Todos" value="Todos">
-          Todos
-        </option>
-        {/*Una opción por cada actividad existente.*/}
-        {arr?.map((activity) => (
-          <option key={activity.id} value={activity.name}>
-            {activity.name}
+      <div>
+        {" "}
+        <select
+          className={s.selector}
+          key="Actividad"
+          onChange={(e) => handleFilterActivity(e)}
+        >
+          {/*Opción base.*/}
+          <option key="Todos" value="Todos">
+            Todos
           </option>
-        ))}
-      </select>
+          {/*Una opción por cada actividad existente.*/}
+          {arr?.map((activity) => (
+            <option key={activity.id} value={activity.name}>
+              {activity.name}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 }
