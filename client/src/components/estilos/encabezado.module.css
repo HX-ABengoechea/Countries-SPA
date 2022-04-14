@@ -69,3 +69,14 @@
   border-color: #1b1a1a;
   font-size: 23px;
 }
+@media (max-width: 1000px) {
+  .mapsphere {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .mapsphere {
+    display: none;
+  }
+}

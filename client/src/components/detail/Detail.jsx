@@ -9,7 +9,6 @@ import Encabezado from "../encabezado/Encabezado";
 import { getCountryById } from "../../redux/actions/index";
 /*IMPORT DE CSS*/
 import s from "../estilos/detail.module.css";
-import cargando from "../estilos/imagenes/cargando.gif";
 //______________________________________________________________________________
 
 /*Este componente va a mostrar toda la información de un país específico.*/
@@ -34,74 +33,71 @@ export default function Detail() {
     <div className={s.container}>
       <Encabezado />
 
-      {idCountry.name ? (
-        <div className={s.infoContainer}>
+      {idCountry.name && (
+        <div className={s.activityContainer}>
           <h3 className={s.actTitle}>Actividades</h3>
-          <div className={s.cardsBox}>
+          <div className={s.activitiesBox}>
             {idCountry.activities &&
               idCountry.activities.map((act) => (
                 <div className={s.actCard} key={act.name}>
-                  <h4 className={s.eachTitle} key={act.name}>
+                  <h3 className={s.actName} key={act.name}>
                     {act.name}
-                  </h4>
-                  <div className={s.difDur}>
-                    <h4 className={s.eachDif} key={act.difficulty}>
-                      DIFICULTAD: {act.difficulty}
-                    </h4>
+                  </h3>
 
-                    <h4 className={s.eachDur} key={act.name + "."}>
-                      DURACIÓN: {act.duration} días
-                    </h4>
-                  </div>
+                  <h3 className={s.actDifficulty} key={act.difficulty}>
+                    DIFICULTAD: {act.difficulty}
+                  </h3>
 
-                  <div className={s.temTem}>
-                    <h4 className={s.eachTem} key={act.season}>
-                      TEMPORADA
-                    </h4>
-                    <h4 className={s.eachTem2} key={act.season + "."}>
-                      {act.season}
-                    </h4>
-                  </div>
+                  <h3 className={s.actDuration} key={act.name + "."}>
+                    DURACIÓN: {act.duration} días
+                  </h3>
+
+                  <h3 className={s.actSeason} key={act.season}>
+                    TEMPORADA: {act.season}
+                  </h3>
                 </div>
               ))}
           </div>
-
-          <div className={s.infoBox}>
-            <img className={s.img} src={idCountry.flag} alt="Not found" />
-
-            <div className={s.part2}>
-              <h1 className={s.name} key={idCountry.name}>
-                {idCountry.name} ({idCountry.id})
-              </h1>
-
-              <h3 className={s.capital} key={idCountry.capital}>
-                Capital {idCountry.capital}
-              </h3>
-            </div>
-
-            <div className={s.part3}>
-              <h2 className={s.continente} key={idCountry.continent}>
-                Continente: {idCountry.continent}
-              </h2>
-
-              <h3 className={s.subregion} key={idCountry.subregion}>
-                Subregion: {idCountry.subregion}
-              </h3>
-
-              <h3 className={s.area} key={idCountry.area}>
-                Area: {idCountry.area}
-              </h3>
-
-              <h3 className={s.poblacion} key={idCountry.population}>
-                Poblacion: {idCountry.population}
-              </h3>
-            </div>
-          </div>
         </div>
-      ) : (
-        <div>
-          <img src={cargando} alt="Not Found" />,
-          <h3 className={s.notFound}>No se encontraron países</h3>
+      )}
+
+      {idCountry.name && (
+        <div className={s.informationContainer}>
+          <img className={s.img} src={idCountry.flag} alt="Not found" />
+
+          <div>
+            <h1 className={s.countryName} key={idCountry.name}>
+              {idCountry.name} ({idCountry.id})
+            </h1>
+          </div>
+          <div>
+            <label className={s.labelMap}>Capital</label>
+            <h3 key={idCountry.capital}>{idCountry.capital}</h3>
+          </div>
+          <div>
+            <label className={s.labelMap}>Continente</label>
+            <h2 className={s.text} key={idCountry.continent}>
+              {idCountry.continent}
+            </h2>
+          </div>
+          <div>
+            <label className={s.labelMap}>Subregion</label>
+            <h3 className={s.text} key={idCountry.subregion}>
+              {idCountry.subregion}
+            </h3>
+          </div>
+          <div>
+            <label className={s.labelMap}>Area</label>
+            <h3 className={s.text} key={idCountry.area}>
+              {idCountry.area}
+            </h3>
+          </div>
+          <div>
+            <label className={s.labelMap}>Poblacion</label>
+            <h3 className={s.text} key={idCountry.population}>
+              {idCountry.population}
+            </h3>
+          </div>
         </div>
       )}
     </div>

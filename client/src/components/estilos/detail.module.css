@@ -1,110 +1,19 @@
 .container {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  background: blue;
-}
-
-.infoContainer {
-  background-color: #272b39;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.actBox {
-  background-color: #272b39;
-  width: 500px;
+.activityContainer {
+  background-color: #323748;
+  width: 100%;
+  height: 30%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-}
-
-.cardsBox {
-  background-color: #101010;
-  width: 470px;
-  height: 550px;
-  border-radius: 13px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 13px;
-  margin-top: 91px;
-  overflow-y: auto;
-}
-
-.infoBox {
-  background-color: #272b39;
-  width: 1018px;
-  height: 657px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.part2 {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.part3 {
-  width: 1000px;
-  height: 210px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.img {
-  width: 600px;
-  height: 420px;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-.name {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 50px;
-  color: rgb(184, 177, 177);
-}
-
-.capital {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 40px;
-  color: rgb(184, 177, 177);
-}
-
-.continente {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 30px;
-  color: rgb(184, 177, 177);
-  width: 500px;
-}
-
-.subregion {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 30px;
-  color: rgb(184, 177, 177);
-  width: 500px;
-}
-.area {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 30px;
-  color: rgb(184, 177, 177);
-  width: 500px;
-}
-
-.poblacion {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 30px;
-  color: rgb(184, 177, 177);
-  width: 500px;
+  justify-content: space-around;
 }
 
 .actTitle {
@@ -113,9 +22,6 @@
   color: #ffbd00;
   text-shadow: 3px 3px 0px #977107, 3px 3px 0px #856306;
   -webkit-text-stroke: 1px black;
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 50px;
   transition: all 500ms ease;
 }
 
@@ -123,62 +29,118 @@
   font-size: 75px;
 }
 
-.actCard {
-  background-color: rgb(157, 152, 152, 0.7);
-  width: 430px;
-  height: 150px;
-  border-radius: 15px;
-  margin: 5px;
+.activitiesBox {
+  background-color: rgba(16, 16, 16, 0.95);
+  border-radius: 13px;
+  border: 1px solid rgba(16, 16, 16, 0.95);
+  height: 85%;
+  width: 65%;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
 
-.eachTitle {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 20px;
-  text-decoration: underline;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.difDur {
-  margin-top: 30px;
+.actCard {
+  background-color: rgba(124, 124, 124, 0.95);
+  margin: 5px;
+  width: 48%;
+  height: 95%;
+  overflow: hidden;
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.eachDif {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
-}
-
-.eachDur {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
-}
-
-.temTem {
-  margin-top: 30px;
-  margin-left: 60px;
-}
-
-.eachTem {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
-}
-.eachTem2 {
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
-}
-
-.notFound {
-  font-size: 30px;
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  color: red;
-  background-color: black;
+.actName {
+  color: black;
   text-decoration: underline;
-  width: 500px;
-  border-radius: 18px;
-  height: 50px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.actDifficulty {
+  color: black;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.actDuration {
+  color: black;
+  margin-left: 10px;
+}
+
+.actSeason {
+  color: black;
+  margin-left: 10px;
+}
+
+.informationContainer {
+  background-color: #272b39;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img {
+  width: 400px;
+  height: 220px;
+  margin-left: 5px;
+}
+
+.labelMap {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.countryName {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  width: 150px;
+}
+
+.text {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1000px) {
+  .actTitle {
+    display: none;
+  }
+  .labelMap {
+    font-size: 14px;
+  }
+  .countryName {
+    font-size: 11px;
+  }
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  .actTitle {
+    display: none;
+  }
+  .labelMap {
+    font-size: 8px;
+  }
+  .countryName {
+    font-size: 7px;
+    width: 50px;
+  }
+  .text {
+    font-size: 7px;
+  }
 }
