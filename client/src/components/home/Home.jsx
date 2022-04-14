@@ -54,7 +54,7 @@ export default function Home() {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      <SearchBar />
+      <SearchBar setCurrentPage={setCurrentPage} setOrden={setOrden} />
 
       <Filtradores setCurrentPage={setCurrentPage} setOrden={setOrden} />
 

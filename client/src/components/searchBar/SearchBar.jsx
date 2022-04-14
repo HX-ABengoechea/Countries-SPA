@@ -10,7 +10,7 @@ import s from "../estilos/searchBar.module.css";
 //______________________________________________________________________________
 
 /*Este componente mostrará la barra de búsqueda en "/home".*/
-export default function SearchBar() {
+export default function SearchBar({ setCurrentPage, setOrden }) {
   const dispatch = useDispatch();
 
   /*Aquí creo un estado local que nos servirá para guardar el nombre del país que se está buscando.*/
@@ -28,6 +28,8 @@ export default function SearchBar() {
     if (name !== "") {
       dispatch(getCountriesByName(name));
       setName("");
+      setCurrentPage(1);
+      setOrden(`Ordenado: ${e.target.value}`);
     } else {
       alert("No se puede buscar la Nada!");
     }
