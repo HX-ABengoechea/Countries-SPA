@@ -176,13 +176,18 @@
 
 .choosed {
   background-color: rgba(21, 20, 20, 0.8);
-  width: 146%;
+  width: 650px;
   height: 100px;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.choosed::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
 }
 
 .submit2 {
