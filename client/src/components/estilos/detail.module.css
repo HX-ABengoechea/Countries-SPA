@@ -9,7 +9,7 @@
 .activityContainer {
   background-color: #323748;
   width: 100%;
-  height: 280px;
+  height: 235px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,7 +33,7 @@
   background-color: rgba(16, 16, 16, 0.95);
   border-radius: 13px;
   border: 1px solid rgba(16, 16, 16, 0.95);
-  height: 85%;
+  height: 190px;
   width: 65%;
   display: flex;
   flex-direction: row;
@@ -80,7 +80,7 @@
 .informationContainer {
   background-color: #272b39;
   width: 100%;
-  height: 80%;
+  height: 425px;
   display: flex;
   flex-direction: row;
   align-items: center;
