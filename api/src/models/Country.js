@@ -2,6 +2,8 @@
 const { DataTypes } = require("sequelize");
 //______________________________________________________________________________
 
+/*Aquí se crea un modelo para guardar la información de los países en la base de datos.*/
+
 module.exports = (sequelize) => {
   sequelize.define(
     "country",

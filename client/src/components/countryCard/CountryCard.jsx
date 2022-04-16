@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import s from "../estilos/countryCards.module.css";
 //______________________________________________________________________________
 
-/*Este componente renderizará cada uno de los paises, con su imagen, su nombre y continente.*/
+/*Cada una de las cartas de presentación de los países.*/
 export default function CountryCard({ name, continent, flag, id }) {
   /*Renderización.*/
   return (

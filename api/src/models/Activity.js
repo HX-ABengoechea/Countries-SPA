@@ -2,6 +2,8 @@
 const { DataTypes } = require("sequelize");
 //______________________________________________________________________________
 
+/*Aquí se crea un modelo para guardar la información de las actividades en la base de datos.*/
+
 module.exports = (sequelize) => {
   sequelize.define(
     "activity",

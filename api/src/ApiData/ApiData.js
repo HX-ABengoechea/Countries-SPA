@@ -3,6 +3,7 @@ const axios = require("axios");
 const { Country } = require("../db");
 //______________________________________________________________________________
 
+/*Aquí se trae toda la información de la API, se la discrimina y se la envía a la base de datos.*/
 const apiCall = async () => {
   try {
     const keepData = await axios.get(`https://restcountries.com/v3/all`);

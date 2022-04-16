@@ -11,7 +11,7 @@ import { getCountryById } from "../../redux/actions/index";
 import s from "../estilos/detail.module.css";
 //______________________________________________________________________________
 
-/*Este componente va a mostrar toda la información de un país específico.*/
+/*Muestra la información de un país específico.*/
 export default function Detail() {
   const dispatch = useDispatch();
 

@@ -23,7 +23,6 @@ export default function OrdenAlfa({ setCurrentPage, setOrden }) {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      {/* {} */}
       <h6 className={s.title}>ORDEN ALFABETICO</h6>
       <select
         className={s.selector}

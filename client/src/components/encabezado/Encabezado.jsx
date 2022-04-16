@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 import s from "../estilos/encabezado.module.css";
 //______________________________________________________________________________
 
+/*Encabezado para la página de detalles.*/
+
 export default function Encabezado() {
+  /*Renderización.*/
   return (
     <div className={s.container}>
       <h1 className={s.mapsphere}>M A P S P H E R E</h1>

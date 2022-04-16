@@ -2,6 +2,8 @@
 const { Activity, Country } = require("../../db");
 //______________________________________________________________________________
 
+/*Este callback se encarga de crear una nueva actividad y guardarla en la base de datos.*/
+
 const postActivity = async (req, res) => {
   try {
     const { name, difficulty, duration, season, countries } = req.body;

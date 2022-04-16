@@ -23,8 +23,6 @@ export default function FiltroContinente({ setCurrentPage, setOrden }) {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      {/*Selector de continente por el que vamos a filtarar.*/}
-
       <h6 className={s.title}>CONTINENTE</h6>
 
       <select

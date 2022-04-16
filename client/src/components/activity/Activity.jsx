@@ -12,7 +12,7 @@ import s from "../estilos/formulario.module.css";
 import e from "../estilos/errorsForm.module.css";
 //______________________________________________________________________________
 
-/*Componente de creación de actividades.*/
+/*Formulario de creaciónd e actividades.*/
 export default function Activity() {
   const dispatch = useDispatch();
 

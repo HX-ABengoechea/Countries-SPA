@@ -23,7 +23,6 @@ export default function OrdenPoblacion({ setCurrentPage, setOrden }) {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      {/*Selectores del modo de ordenamiento.*/}
       <h6 className={s.title}>POBLACION</h6>
       <select
         className={s.selector}

@@ -21,8 +21,8 @@ export default function FiltroActividad({ setCurrentPage, setOrden }) {
     return state;
   });
 
+  /*Evito que se repitan las actividades y las formalizo en minúsculas.*/
   let arr = [];
-
   for (let i = 0; i < allActivities.length; i++) {
     let aux = false;
     for (let j = 0; j < arr.length; j++) {
@@ -55,20 +55,16 @@ export default function FiltroActividad({ setCurrentPage, setOrden }) {
   /*Renderización.*/
   return (
     <div className={s.container}>
-      {/*Selector de actividad a filtrar.*/}
       <h6 className={s.title}>ACTIVIDAD TURISTICA</h6>
       <div>
-        {" "}
         <select
           className={s.selector}
           key="Actividad"
           onChange={(e) => handleFilterActivity(e)}
         >
-          {/*Opción base.*/}
           <option key="Todos" value="Todos">
             Todos
           </option>
-          {/*Una opción por cada actividad existente.*/}
           {arr?.map((activity) => (
             <option key={activity.id} value={activity.name}>
               {activity.name}

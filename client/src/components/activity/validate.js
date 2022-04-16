@@ -1,3 +1,5 @@
+/*Esta función maneja todas las validaciones del formulario.*/
+
 function validate(input) {
   let errors = {};
   if (!input.name) {
