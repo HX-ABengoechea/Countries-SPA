@@ -6,7 +6,7 @@ const { Country } = require("../db");
 /*Aquí se trae toda la información de la API, se la discrimina y se la envía a la base de datos.*/
 const apiCall = async () => {
   try {
-    const keepData = await axios.get(`https://restcountries.com/v3/all`);
+    const keepData = await axios(`https://restcountries.com/v3/all`);
 
     keepData.data.map(async (pais) => {
       await Country.findOrCreate({
@@ -32,3 +32,4 @@ const apiCall = async () => {
 };
 
 module.exports = { apiCall };
+
