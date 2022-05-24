@@ -35,10 +35,10 @@ Back-End:
 
 ## Project Screens:
 
-<img height="500" src="./ca.png" />
+<img height="500" src="./img/ca.png" />
 <br>
 <br>
-<img height="500" src="./cd.png" />
+<img height="500" src="./img/cd.png" />
 <br>
 <br>
-<img height="500" src="./cs.png" />
+<img height="500" src="./img/cs.png" />
